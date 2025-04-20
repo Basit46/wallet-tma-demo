@@ -15,7 +15,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`max-w-[450px] mx-auto h-screen bg-[#020820] text-white border-t border-t-[#0E46AC] rounded-t-[32px] antialiased`}
+        className={`max-w-[450px] w-full mx-auto h-screen bg-[#020820] text-white border-t border-x-0 border-x-transparent border-t-[#0E46AC] rounded-t-[32px] antialiased`}
       >
         <TelegramProvider>{children}</TelegramProvider>
 
