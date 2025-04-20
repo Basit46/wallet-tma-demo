@@ -11,7 +11,7 @@ const Home = () => {
     if (clickedWords.length > 11) {
       router.push("/balance");
     } else {
-      showAlert("Click your 12 wallet phrases");
+      showAlert("Select your 12 back up phrase");
     }
   };
 
@@ -21,7 +21,7 @@ const Home = () => {
 
   const handleWordClick = (id: number) => {
     if (clickedWords.length > 11) {
-      showAlert("Click your 12 wallet phrases");
+      showAlert("Select your 12 back up phrase");
     }
     const newWord = words.find((word) => word.id == id);
     const exists = clickedWords.find((word) => word.id == newWord?.id);
